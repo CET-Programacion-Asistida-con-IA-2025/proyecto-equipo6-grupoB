@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educación ambiental, reciclaje, juegos y herramientas para fomentar la sostenibilidad. Descubrí cómo reducir tu huella ecológica.">
+  <meta name="author" content="ProPlástico">
+  <meta name="keywords" content="reciclaje, educación ambiental, Buenos Aires, plástico, sostenibilidad, ODS, medio ambiente, puntos verdes">
+  <meta name="robots" content="index, follow">
     <title>Sostenibilidad | Reducir • Reusar • Reparar • Reciclar</title>
     <link href="https://fonts.googleapis.com/css2?family=Cooper+Hewitt:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -16,6 +20,8 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#acciones">Las 4 R's</a></li>
                 <li><a href="#estadisticas">Impacto</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#mapa">Mapa</a></li>
                 <li><a href="#accion">Únete</a></li>
             </ul>
             <div class="menu-toggle" id="menuToggle">
@@ -89,11 +95,41 @@
         </div>
     </section>
 
+    <!-- RESOURCES SECTION -->
+    <section class="resources animate-on-scroll" id="recursos">
+  <h2 class="section-title">Recursos Educativos</h2>
+  <p class="section-subtitle">Materiales gratuitos para aprender, enseñar y actuar por el planeta.</p>
+  <div class="resources-grid">
+    <a href="guia-docentes.html" class="resource-card">📘 Guía interactiva para docentes</a>
+    <a href="calculadora.html" class="resource-card">🧮 Calculadora de Huella Plástica</a>
+    <a href="juego.html" class="resource-card">🎮 Juego: ¿Dónde lo tirás?</a>
+  </div>
+</section>
+
+<!-- Mapa-->
+ <section class="mapa-section">
+  <h2 class="section-title">🗺️ Mapa de Puntos Verdes en Buenos Aires</h2>
+  <p>Encontrá los lugares más cercanos donde podés llevar materiales reciclables.</p>
+
+  <div class="mapa-contenedor">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d105092.86061437205!2d-58.49917347187487!3d-34.60032039473181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smapa%20de%20puntos%20verdes%20ciudad%20de%20buenos%20aires!5e0!3m2!1ses!2sar!4v1752548971051!5m2!1ses!2sar"
+      width="100%"
+      height="480"
+      style="border:0; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
     <!-- CALL TO ACTION -->
     <section class="cta animate-on-scroll" id="accion">
         <h2>¿Listo para el Cambio?</h2>
         <p>Únete a nuestra comunidad y comienza tu viaje hacia un estilo de vida más sostenible y consciente</p>
         <a href="#" class="btn" id="joinBtn">Comenzar Ahora</a>
+        <div id="mensajeFinal" class="mensaje-final"></div>
     </section>
 
     <!-- FOOTER -->
@@ -127,6 +163,26 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+<!-- CONTENEDOR FIJO DEL ASISTENTE -->
+<div id="contenedorAsistente">
+  <!-- Ventana -->
+  <div id="asistenteVirtual" class="asistente-ventana">
+    <div class="asistente-header">
+      🤖 Asistente Virtual
+      <button id="cerrarAsistente" class="cerrar-asistente">×</button>
+    </div>
+    <div id="chatLog" class="chat-log"></div>
+    <div class="asistente-input">
+      <input type="text" id="userInput" placeholder="Escribí un número..." />
+      <button id="enviarBtn">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Botón flotante -->
+  <button id="abrirAsistente" class="asistente-boton">💬</button>
+</div>
+
+<script src="script.js"></script>
+<script src="asistente.js"></script>
 </body>
 </html>
