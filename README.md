@@ -63,3 +63,35 @@ Ahora si, ¡A programar! 🚀
       🧰 Servir como centro de recursos: Ofrecer enlaces, materiales descargables, guías y campañas que faciliten la acción ciudadana y el trabajo conjunto entre vecinos, instituciones educativas y organizaciones barriales.
 
 **Tecnológicamente, se utiliza un enfoque web responsivo para asegurar la accesibilidad desde distintos dispositivos, priorizando la usabilidad y claridad de la información. La estructura del sitio permite escalar funcionalidades futuras, como agregar filtros por zona, suscripción a campañas locales o incorporación de datos colaborativos.**
+
+🧾 Entrega #2 – Cambios realizados
+A continuación se detallan las modificaciones y mejoras realizadas respecto a la Entrega #1:
+
+✅ Estructura general
+Se incorporaron nuevas secciones al sitio principal (index.html) manteniendo una estructura clara, responsive y coherente.
+
+Se reorganizaron las secciones para mejorar la experiencia de navegación.
+
+✅ Nuevas funcionalidades implementadas
+Calculadora de Huella Plástica: herramienta interactiva en JavaScript que permite calcular el impacto estimado del consumo de plástico.
+
+Juego de Reciclaje: quiz educativo de 10 preguntas para reforzar conocimientos sobre reciclaje y sostenibilidad.
+
+Asistente virtual: integración de un asistente simple con sistema de menú guiado, que responde a consultas frecuentes con lógica condicional.
+
+✅ Secciones agregadas
+Guía interactiva para docentes: sección nueva que reemplaza los archivos descargables por contenido educativo directo en HTML.
+
+Mapa de puntos verdes: integración visual de un mapa real con puntos de reciclaje en Buenos Aires, embebido desde Google Maps.
+
+🎨 Mejoras de diseño y estilo
+Ajuste del diseño para que las secciones como “Las 4 R's” y “Nuestro impacto juntos” queden equilibradas visualmente (uso de grid).
+
+Estilos aplicados a botones y enlaces con hover, sombras y colores accesibles.
+
+Rediseño del formulario del asistente virtual con ventana emergente fija.
+
+🛠️ Código y estructura técnica
+Separación clara de archivos: HTML / CSS / JS para cada componente.
+
+Validaciones básicas en la calculadora y asistente.
