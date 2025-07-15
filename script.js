@@ -408,3 +408,9 @@ const debouncedScroll = debounce(() => {
 }, 16); // ~60fps
 
 window.addEventListener('scroll', debouncedScroll);
+
+document.getElementById('joinBtn').addEventListener('click', (e) => {
+  e.preventDefault();
+  const mensaje = document.getElementById('mensajeFinal');
+  mensaje.textContent = "🌱 ¡Gracias por sumarte! Estamos construyendo un futuro sostenible junt@s.";
+});
